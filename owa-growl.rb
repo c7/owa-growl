@@ -17,10 +17,7 @@ if ARGV[0] == "start"
   OWA_PASSWORD = ask('Email password: ') { |q| q.echo = "*" }
 end
 
-Daemons.run_proc('owa-growl') do  
-  
-
-
+Daemons.run_proc('owa-growl') do
   loop do
     agent = WWW::Mechanize.new
     agent.auth(OWA_USERNAME, OWA_PASSWORD)

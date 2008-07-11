@@ -12,7 +12,7 @@ GROWL_NOTIFICATION_TITLE = 'New Email in Outlook Web Access'
 FOLDERS_URL = 'YOUR_URL_TO_THE_FOLDERS_PAGE_IN_OWA'
 SLEEP_DURATION = 300
 
-if ARGV[0] == "start"
+if ARGV[0] == "start" || ARGV[0] == "run"
   # Get the required user input before we start the loop
   GROWL_PASSWORD = ask('Growl password: ') { |q| q.echo = "*" }
   OWA_USERNAME = ask('Email username: ')

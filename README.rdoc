@@ -1,0 +1,22 @@
+= owa-growl
+
+Get growl notifications from Outlook Web Access.
+
+== DEPENDENCIES
+
+* Rubygems
+* Daemons (http://daemons.rubyforge.org)
+* HighLine (http://highline.rubyforge.org)
+* WWW::Mechanize (http://mechanize.rubyforge.org)
+* Ruby-Growl (http://segment7.net/projects/ruby/growl)
+
+Oh yeah, and Mac OS X with Growl installed.
+
+== USAGE
+
+Just start the script like any other daemon with the "start" argumet, it will 
+then ask you for the growl password, the email username and password.
+
+== GET INVOLVED
+
+Just fork the project and get started coding :)

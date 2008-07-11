@@ -29,12 +29,10 @@ Daemons.run_proc('owa-growl') do
     
     elements = page.search("/html/body//i")
     
-    unless elements.empty?
-      elements.each do |element|
-        match = /\((\d+)\)/.match(element.inner_html)
-        unless match.nil?
-          new_email_count += match[1].to_i
-        end
+    elements.each do |element|
+      match = /\((\d+)\)/.match(element.inner_html)
+      unless match.nil?
+        new_email_count += match[1].to_i
       end
     end
     

@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 require 'rubygems'
 require 'daemons'
 require 'highline/import'
@@ -7,7 +9,7 @@ require 'ruby-growl'
 # Configuration
 GROWL_HOST = 'localhost'
 GROWL_NOTIFICATION_TITLE = 'New Email in Outlook Web Access'
-FOLDERS_URL = 'https://webaccess.bisnode.se/exchange/peter.hellberg@ad.se/?Cmd=contents&ShowFolders=1'
+FOLDERS_URL = 'YOUR_URL_TO_THE_FOLDERS_PAGE_IN_OWA'
 SLEEP_DURATION = 300
 
 if ARGV[0] == "start"
